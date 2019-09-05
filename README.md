@@ -74,18 +74,21 @@ It looks as though my light does change for the whole range of the potentiometer
 **a. What do you have to modify to make the code control the circuit you've built on your breadboard?**
 I changed
 
-`<*/
+```*/
 
 int led = 9;           // the PWM pin the LED is attached to
 int brightness = 0;    // how bright the LED is
-int fadeAmount = 5;    // how many points to fade the LED by>`
+int fadeAmount = 5;    // how many points to fade the LED by
+```
 
 to 
-`<*/
+
+```*/
 
 int led = 11;           // the PWM pin the LED is attached to
 int brightness = 0;    // how bright the LED is
-int fadeAmount = 5;    // how many points to fade the LED by>`
+int fadeAmount = 5;    // how many points to fade the LED by
+```
 
 
 **b. What is analogWrite()? How is that different than digitalWrite()?**
