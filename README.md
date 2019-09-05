@@ -28,8 +28,10 @@ Make sure my button is pushed in all the way! I didn't have full contact
 
 **a. What line(s) of code do you need to change to make the LED blink (like, at all)?**
 Change `<pinMode(LED_BUILTIN, OUTPUT);>`, `<digitalWrite(9, HIGH);>`, and  `<digitalWrite(9, LOW);>` to `<pinMode(9, OUTPUT);>` etc.
+
 **b. What line(s) of code do you need to change to change the rate of blinking?**
 `<delay(1000);>`
+
 **c. What circuit element would you want to add to protect the board and external LED?**
 A resistor
  
@@ -38,7 +40,7 @@ I changed my LED from 1000, to 100, to 10 and could no longer see it blinking. I
 
 **e. Modify the code to make your LED blink your way. Save your new blink code to your lab 1 repository, with a link on the README.md.**
 
-`<// the setup function runs once when you press reset or power the board
+```// the setup function runs once when you press reset or power the board
 void setup() {
   // initialize digital pin LED_BUILTIN as an output.
   pinMode(9, OUTPUT);
@@ -50,7 +52,7 @@ void loop() {
   delay(2000);                       // wait for a second
   digitalWrite(9, LOW);    // turn the LED off by making the voltage LOW
   delay(2000);                       // wait for a second
-}>`
+}```
 
 
 ### 2. Blink your LED
