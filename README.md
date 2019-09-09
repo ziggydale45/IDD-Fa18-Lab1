@@ -93,7 +93,8 @@ int fadeAmount = 5;    // how many points to fade the LED by
 
 ## Part F. FRANKENLIGHT!!!
 
-### 1. Take apart your electronic device, and draw a schematic of what is inside. 
+### 1. Take apart your electronic device, and draw a schematic of what is inside.
+![diagram](https://github.com/ziggydale45/IDD-Fa18-Lab1/blob/master/IMG_0311.JPG)
 
 **a. Is there computation in your device? Where is it? What do you think is happening inside the "computer?"**
 This device is a calculator, so there's likely a very basic computer for simple math.
