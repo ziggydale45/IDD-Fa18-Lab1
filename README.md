@@ -110,4 +110,9 @@ int fadeAmount = 5;    // how many points to fade the LED by
 
 **Make a video showing off your Frankenlight.**
 
+![Frankenlight Front](https://github.com/ziggydale45/IDD-Fa18-Lab1/blob/master/IMG_0306.JPG)
+![Frankenlight back (sensors)](https://github.com/ziggydale45/IDD-Fa18-Lab1/blob/master/IMG_0307.JPG)
+![Frankenlight doesn't work](https://github.com/ziggydale45/IDD-Fa18-Lab1/blob/master/IMG_0308.JPG)
+![Frankenlight working (on different device](https://github.com/ziggydale45/IDD-Fa18-Lab1/blob/master/IMG_0309.JPG)
+
 **Include any schematics or photos in your lab write-up.**
