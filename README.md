@@ -62,7 +62,7 @@ https://youtu.be/lHnSWTakOko
 ## Part D. Manually fade an LED
 
 **a. Are you able to get the LED to glow the whole turning range of the potentiometer? Why or why not?**
-It looks as though my light does change for the whole range of the potentiometer.  I'm using a 270 Ohm resistor + my 10k Ohm potentiometer. This means my range is from 270 Ohm to 10270 Ohm. For the LED to not detectably change throughout the range of the potentiometer, my guess is that 
+It looks as though my light does change for the whole range of the potentiometer.  I'm using a 270 Ohm resistor + my 10k Ohm potentiometer. This means my range is from 270 Ohm to 10270 Ohm. For the LED to not detectably change throughout the range of the potentiometer, the voltage must either hit a max or minimum threshold, where the LED is powered off or lit as brightly as it can be. My guess is that with different resistor values, I might be able to find this threshold.
 
 
 ## Part E. Fade an LED using Arduino
@@ -88,6 +88,7 @@ int fadeAmount = 5;    // how many points to fade the LED by
 
 
 **b. What is analogWrite()? How is that different than digitalWrite()?**
+ AnalogWrite() will accept a value anywhere between 0 and 255, which is what allows me to Fade the LED with the Arduino. AnalogWrite() will only accept Low or High, which corresponds to on or off.
 
 
 ## Part F. FRANKENLIGHT!!!
@@ -95,16 +96,23 @@ int fadeAmount = 5;    // how many points to fade the LED by
 ### 1. Take apart your electronic device, and draw a schematic of what is inside. 
 
 **a. Is there computation in your device? Where is it? What do you think is happening inside the "computer?"**
+This device is a calculator, so there's likely a very basic computer for simple math.
 
 **b. Are there sensors on your device? How do they work? How is the sensed information conveyed to other portions of the device?**
 
+The sensors are on the front side of the device (picture in part 3), where the calculator buttons make contact with the board. Information is conveyed via the boards circuit, which is indicated by the green lines. 
+
 **c. How is the device powered? Is there any transformation or regulation of the power? How is that done? What voltages are used throughout the system?**
 
+The device is powered by a battery. There does not appear to be any transformation or regulation. Neither the board nor the battery indicate voltage, so I'm unsure what voltage is used throughout the system. 
+
 **d. Is information stored in your device? Where? How?**
+Information is likely stored at the central black button on my board, as all the circuits land at this button. 
+
 
 ### 2. Using your schematic, figure out where a good point would be to hijack your device and implant an LED.
 
-**Describe what you did here.**
+My Frankenlight has a clearly labeled + and - near the battery. Unfortunately, the calculator didn't work, so I wasn't able to get the LED to light up. I was able to get the Frankenlight to light up on a different device (a microphone).
 
 ### 3. Build your light!
 
